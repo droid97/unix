@@ -3,11 +3,19 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import LoginForm from './components/auth/LoginForm';
 import SignUpForm from './components/auth/SignUpForm';
+import PostListing from './components/post/PostListing';
+import SinglePost from './components/post/SinglePost';
+import EditPostForm from './components/post/EditPostForm';
+import NewPostForm from './components/post/NewPostForm';
 import NavBar from './components/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
+
+
+
 import { authenticate } from './store/session';
+import { getAllPosts } from './store/posts'
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -16,6 +24,8 @@ function App() {
   useEffect(() => {
     (async() => {
       await dispatch(authenticate());
+      await dispatch(getAllPosts());
+
       setLoaded(true);
     })();
   }, [dispatch]);
@@ -28,11 +38,24 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
+
+        <Route path='/feed' exact={true}>
+          <PostListing />
+        </Route>
         <Route path='/login' exact={true}>
           <LoginForm />
         </Route>
         <Route path='/sign-up' exact={true}>
           <SignUpForm />
+        </Route>
+        <Route path='/new-post' exact={true}>
+          <NewPostForm />
+        </Route>
+        <Route path='/posts/:id' exact={true}>
+          <SinglePost/>
+        </Route>
+        <Route path='/posts/:id/edit'>
+          <EditPostForm />
         </Route>
         <ProtectedRoute path='/users' exact={true} >
           <UsersList/>

@@ -28,6 +28,16 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to='/new-post' exact={true} activeClassName='active'>
+            Make a post
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/feed' exact={true} activeClassName='active'>
+            Feed
+          </NavLink>
+        </li>
+        <li>
           <LogoutButton />
         </li>
       </ul>

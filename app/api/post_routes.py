@@ -1,26 +1,19 @@
 from flask import Blueprint, jsonify, request
 from app.models import db
 from flask_login import login_required, current_user
-from app.models import Post, db
+from app.models import Post,  db
 from app.forms import NewPostForm
-
 from sqlalchemy import desc
 
-post_routes = Blueprint('post', __name__)
+
+post_routes = Blueprint('posts', __name__)
+
 
 # GET /api/posts/:id
 @post_routes.route('/<int:id>')
 def get_post(id):
     post = Post.query.get(id)
     return post.to_dict()
-
-# GET /api/postsrandom
-@post_routes.route('/random-order-posts')
-def get_random_posts():
-    posts = Post.query.all()
-    allPosts = [post.to_dict() for post in posts]
-    random.shuffle(allPosts)
-    return {'allrandomposts': allPosts}
 
 # GET /api/posts
 @post_routes.route('/')
@@ -46,6 +39,7 @@ def new_post():
         return post.to_dict()
     return (form.errors)
 
+
 # PUT /api/posts/:id
 @post_routes.route('/<id>', methods=["PUT"])
 @login_required
@@ -60,6 +54,13 @@ def update_post(id):
         return {'post': post.to_dict()}
     return (form.errors)
 
+# GET /api/postsrandom
+@post_routes.route('/random-order-posts')
+def get_random_posts():
+    posts = Post.query.all()
+    allPosts = [post.to_dict() for post in posts]
+    random.shuffle(allPosts)
+    return {'allrandomposts': allPosts}
 
 
 # DELETE /api/posts/:id
