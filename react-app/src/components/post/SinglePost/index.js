@@ -5,6 +5,8 @@ import { getAllPosts, deleteOnePost } from "../../../store/posts";
 import { getAllComments, addOneComment, deleteOneComment } from "../../../store/comments";
 import { CgTrash } from "react-icons/cg";
 import { RiFileEditFill} from "react-icons/ri";
+import EditCommentForm from "../EditCommentForm";
+
 
 const SinglePost = () => {
 
@@ -27,16 +29,18 @@ const SinglePost = () => {
     const commentsObj = useSelector(state => state.comments);
     const comments = Object.values(commentsObj)
     const commentForEachPost = comments.filter((comment) => comment.post_id === +id)
-
-
+    commentForEachPost.sort((a, b) => (a.color > b.color) ? 1 : -1)
 
     //comments
     const sessionUser = useSelector(state => state.session.user);
     const [errors, setErrors] = useState([]);
     const [comment_text, setCommentText] = useState('');
+    const [editPopUp, setEditPopUp] = useState(false)
 
 
-
+    const openPopUp = () => {
+        setEditPopUp(!editPopUp)
+    }
 
     const validate = () => {
 

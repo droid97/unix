@@ -18,7 +18,7 @@ const PostListing = () => {
 
 
     const feed = Object.values(posts)
-    feed.sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))
+    feed.sort((a, b) => (a.color > b.color) ? 1 : -1)
 
 
     useEffect(() => {
