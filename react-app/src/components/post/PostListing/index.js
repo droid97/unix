@@ -16,9 +16,9 @@ const PostListing = () => {
         }
     })
 
-    //this is for followed users
 
     const feed = Object.values(posts)
+    feed.sort((a, b) => (a.color > b.color) ? 1 : -1)
 
 
     useEffect(() => {

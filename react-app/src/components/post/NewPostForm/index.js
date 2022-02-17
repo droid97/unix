@@ -21,6 +21,9 @@ const NewPostForm = () => {
         if (!imgURL || !validUrl.isUri(imgURL)) {
              errors.push("Please provide an image URL for your photo.")
          }
+         if (!caption) {
+            errors.push("Please provide a caption for your photo.")
+        }
          else if (caption.length > 2200) {
              errors.push("Character limit is 2200.")
          }
