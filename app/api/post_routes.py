@@ -1,8 +1,9 @@
 from flask import Blueprint, jsonify, request
 from app.models import db
 from flask_login import login_required, current_user
-from app.models import Post,  db
+from app.models import Post, Comment, db
 from app.forms import NewPostForm
+from app.forms.comment_form import NewCommentForm
 from sqlalchemy import desc
 
 
@@ -71,3 +72,31 @@ def delete_post(id):
     db.session.delete(post)
     db.session.commit()
     return "Post deleted"
+
+
+#### COMMENTS
+
+# GET /api/posts/:id/comments
+@post_routes.route('/<int:id>/comments')
+def get_posts_comments(id):
+    comments = Comment.query.filter(Comment.post_id==id).all()
+    return {'comments': [comment.to_dict() for comment in comments]}
+
+
+# POST /api/posts/:id/comments
+@post_routes.route('/<int:id>/comments', methods=["POST"])
+@login_required
+def new_comment(id):
+    data = request.json
+    form = NewCommentForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+    if form.validate_on_submit():
+        comment = Comment(
+            user_id=data['user_id'],
+            post_id=data['post_id'],
+            comment_text=form.data['comment_text']
+        )
+        db.session.add(comment)
+        db.session.commit()
+        return comment.to_dict()
+    return (form.errors)

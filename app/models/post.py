@@ -13,6 +13,7 @@ class Post(db.Model):
     updated_at = db.Column(db.DateTime, nullable=False, default=datetime.now(), onupdate=datetime.now())
 
     users = db.relationship("User", back_populates="posts")
+    comments = db.relationship("Comment", back_populates="posts", cascade="all,delete")
 
 
 
