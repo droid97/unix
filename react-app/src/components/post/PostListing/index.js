@@ -16,9 +16,9 @@ const PostListing = () => {
         }
     })
 
-    //this is for followed users
 
     const feed = Object.values(posts)
+    feed.sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))
 
 
     useEffect(() => {

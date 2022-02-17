@@ -11,7 +11,7 @@ const EditPostForm = () => {
     const id = useParams().id
     const [errors, setErrors] = useState([]);
     const [caption, setCaption] = useState('');
-    const oldCaption = useSelector(state => state?.posts[id].caption)
+    const oldCaption = useSelector(state => state?.posts[id]?.caption)
 
 
     const validate = () => {
@@ -33,7 +33,7 @@ const EditPostForm = () => {
             return state.session.user.id
         }})
     const image = useSelector(state => {
-        return state?.posts[id].imgURL
+        return state?.posts[id]?.imgURL
     })
 
     useEffect(() => {
