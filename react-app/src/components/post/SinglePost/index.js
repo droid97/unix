@@ -69,7 +69,7 @@ const SinglePost = () => {
 
     const handleDelete = (id) => {
         dispatch(deleteOnePost(id))
-        .then(() => {history.push(`/`)})
+        .then(() => {history.push(`/feed`)})
     }
 
 
