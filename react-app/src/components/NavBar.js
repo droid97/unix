@@ -40,6 +40,11 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to='/unix' exact={true} activeClassName='active'>
+            Unix
+          </NavLink>
+        </li>
+        <li>
           <DemoButton />
         </li>
         <li>

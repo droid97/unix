@@ -5,7 +5,7 @@ import { getAllPosts, deleteOnePost } from "../../../store/posts";
 import { getAllComments, addOneComment, deleteOneComment } from "../../../store/comments";
 import { CgTrash } from "react-icons/cg";
 import { RiFileEditFill} from "react-icons/ri";
-import EditCommentForm from "../EditCommentForm";
+import './SinglePost.css'
 
 
 const SinglePost = () => {
@@ -38,9 +38,7 @@ const SinglePost = () => {
     const [editPopUp, setEditPopUp] = useState(false)
 
 
-    const openPopUp = () => {
-        setEditPopUp(!editPopUp)
-    }
+
 
     const validate = () => {
 
@@ -108,13 +106,15 @@ const SinglePost = () => {
 
 
     return (
-        <div className='singlepost'>
+        <div className='single-post'>
+
+          <div className='post'>
             <div>
-                <img src={post[id]?.imgURL}   width="600px"></img>
-                <p>{post[id]?.caption}</p>
+                <img className="post-image" src={post[id]?.imgURL} ></img>
+                <p class="description">{post[id]?.caption}</p>
             </div>
             <div>
-
+            <div class="reaction-wrapper">
 
                 {post[id]?.user_id === userId && (
                   <NavLink to={`/posts/${id}/edit`}>
@@ -126,9 +126,10 @@ const SinglePost = () => {
                         <CgTrash className="trash" onClick={() => handleDelete(id)}/>
                     )}
 
+
              </div>
-
-
+             </div>
+             </div>
                {sessionUser &&
                  <form onSubmit={handleComment} className='card-form' id='commentsForm'>
                   <div className="errors-comment">

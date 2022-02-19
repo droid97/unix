@@ -8,6 +8,7 @@ import SinglePost from './components/post/SinglePost';
 import EditPostForm from './components/post/EditPostForm';
 import EditCommentForm from './components/post/EditCommentForm';
 import NewPostForm from './components/post/NewPostForm';
+import SplashPage from './components/post/SplashPage';
 import NavBar from './components/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
@@ -45,6 +46,9 @@ function App() {
 
         <Route path='/feed' exact={true}>
           <PostListing />
+        </Route>
+        <Route path='/unix' exact={true}>
+          <SplashPage />
         </Route>
         <Route path='/login' exact={true}>
           <LoginForm />
