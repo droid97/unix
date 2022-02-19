@@ -1,0 +1,183 @@
+p {
+    margin: 0;
+  }
+
+  .clip-contents {
+    overflow: hidden;
+  }
+
+  .flex-row-hsb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex-col-vsb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .macbook-pro-141 {
+    left      : 50%;
+    top       : 50%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+
+
+    padding: 0px 0px 0px 51px;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+      linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-version-10 {
+    position: absolute;
+    top: 566px;
+    left: 52px;
+    padding: 325px 0px 0px 0px;
+    box-sizing: border-box;
+    width: 1440px;
+    height: 416px;
+  }
+
+  .group-1023 {
+    padding: 32px 119px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.86);
+    width: 1440px;
+  }
+
+  .txt-061 {
+    left      : 50%;
+    top       :80%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+    font-size: 12px;
+    font-family: Heebo, sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.64);
+    word-wrap: break-word;
+  }
+
+  .frame-6 {
+    width: 200px;
+    height: 24px;
+    opacity: 0.4;
+  }
+
+  .group-599 {
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    padding: 201px 329px 409px 388px;
+    box-sizing: border-box;
+
+    background: url(https://github.com/droid97/fp-wa/blob/main/Pasted%20Graphic.png?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 806px;
+    height: 761px;
+  }
+
+  .frame-2 {
+    width: 87px;
+    height: 149px;
+  }
+
+  .group-8 {
+    position: absolute;
+    top: 279px;
+    left: 70px;
+    width: 527px;
+    height: 411px;
+  }
+
+  .group-6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 527px;
+    height: 361px;
+  }
+
+  .group-5 {
+    width: 479.63px;
+    height: 234px;
+  }
+
+  .txt-669 {
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    line-height: 155%;
+    color: rgba(255, 255, 255, 1);
+    width: 479.63px;
+    word-wrap: break-word;
+  }
+
+  .txt-373 {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    line-height: 200%;
+    color: rgba(255, 255, 255, 1);
+    width: 527px;
+    height: 101px;
+    word-wrap: break-word;
+  }
+
+  .group-7 {
+    position: absolute;
+    top: 373px;
+    left: 48px;
+    padding: 9px 0px 4px 43px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: linear-gradient(
+      92.48deg,
+      rgba(250, 131, 5, 1) 2.08%,
+      rgba(251, 158, 60, 1) 117.25%
+    );
+    width: 142px;
+    height: 38px;
+  }
+
+  .txt-469 {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    width: 98px;
+    height: 28px;
+    word-wrap: break-word;
+  }
+
+  .group-71 {
+    position: absolute;
+    top: 652px;
+    left: 353px;
+    padding: 9px 0px 4px 43px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background: linear-gradient(
+      92.48deg,
+      rgba(250, 131, 5, 1) 2.08%,
+      rgba(251, 158, 60, 1) 117.25%
+    );
+    width: 142px;
+    height: 38px;
+  }
+
+  .txt-876 {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    width: 98px;
+    height: 28px;
+    word-wrap: break-word;
+  }
