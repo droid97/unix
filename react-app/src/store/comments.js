@@ -24,7 +24,7 @@ const deleteComment = comment => ({
 })
 
 export const getAllComments = () => async (dispatch) => {
-    const res = await fetch(`/api/comments`);
+    const res = await fetch(`/api/comments/`);
     const comments = await res.json();
     dispatch(getComments(comments));
   };
