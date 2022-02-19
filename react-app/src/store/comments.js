@@ -23,24 +23,21 @@ const deleteComment = comment => ({
     payload: comment
 })
 
-// export const getAllComments = () => async (dispatch) => {
-//     const res = await fetch(`/api/comments`);
-//     const comments = await res.json();
-//     dispatch(getComments(comments));
-//   };
+export const getAllComments = () => async (dispatch) => {
+    const res = await fetch(`/api/comments`);
+    const comments = await res.json();
+    dispatch(getComments(comments));
+  };
 
-  export const getAllComments = postId => async dispatch => {
-    const response = await fetch(`/api/posts/${postId}/comments`)
-    if (response.ok) {
-        const data = await response.json();
-        if (data.errors) {
-            return;
-        }
+//   export const getAllComments = postId => async dispatch => {
+//     const response = await fetch(`/api/posts/${postId}/comments`)
+//     if (response.ok) {
+//         const data = await response.json();
 
-        dispatch(getComments(data));
-        return data
-    }
-}
+//         dispatch(getComments(data));
+
+//     }
+// }
 
   export const addOneComment = comment => async dispatch => {
     const response = await fetch(`/api/posts/${comment.post_id}/comments`, {

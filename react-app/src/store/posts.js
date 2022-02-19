@@ -30,11 +30,8 @@ export const getAllPosts = () => async dispatch => {
     const response = await fetch('/api/posts/')
     if (response.ok) {
         const data = await response.json();
-        if (data.errors) {
-            return;
-        }
         dispatch(getPosts(data));
-        return data
+
     }
 }
 

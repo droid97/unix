@@ -16,6 +16,7 @@ def get_post(id):
     post = Post.query.get(id)
     return post.to_dict()
 
+
 # GET /api/posts
 @post_routes.route('/')
 def get_feed():
