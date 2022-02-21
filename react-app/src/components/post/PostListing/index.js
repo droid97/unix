@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Redirect,  NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllPosts } from "../../../store/posts";
-
+import './PostListing.css'
 
 
 const PostListing = () => {
