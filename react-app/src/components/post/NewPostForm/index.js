@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory, Redirect } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { addOnePost } from "../../../store/posts";
-
+import './NewPostForm.css'
 
 
 
@@ -92,7 +92,6 @@ const NewPostForm = () => {
                                   width="600px"
           />
 
-            <p className="name">imgUrl</p>
 
         </div>
         <div className="card-_content flex-col-vsb clip-contents">

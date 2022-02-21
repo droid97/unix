@@ -1,0 +1,224 @@
+/* Container */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+p {
+  margin: 0;
+}
+
+.clip-contents {
+  overflow: hidden;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-hcenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-col-hcenter-vsb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.flex-col-vcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-hcenter {
+  justify-content: center;
+}
+
+.macbook-pro-145 {
+  left      : 50%;
+  top       : 80%;
+  position  : absolute;
+  transform : translate(-50%, -50%);
+
+  padding: 201px 263px 290px 530px;
+  box-sizing: border-box;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
+    linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  width: 1512px;
+  height: 982px;
+}
+
+.frame-2 {
+  padding: 9px 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(226, 225, 229, 1);
+}
+
+.container {
+  position: absolute;
+  top: 276px;
+  left: 531px;
+  width: 451px;
+  height: 415px;
+}
+
+.card {
+  padding: 27px 0px 90px 0px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 12px 24px rgba(18, 38, 63, 0.05);
+  width: 451px;
+  height: 492px;
+}
+
+.ob-forms-imgurl {
+  width: 300px;
+  height: 84px;
+}
+
+.frame {
+  padding: 9px 39px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(226, 225, 229, 1);
+  height: fit-content;
+}
+
+.name {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(210, 210, 210, 1);
+  word-wrap: break-word;
+}
+
+.txt-245 {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: 28px;
+  word-wrap: break-word;
+}
+
+.card-_content {
+  padding: 5px 150px 130px 75px;
+  box-sizing: border-box;
+  border-radius: 0px 0px 4px 4px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 451px;
+  height: 400px;
+}
+
+.ob-forms-caption {
+  height: fit-content;
+}
+
+.txt-724 {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(0, 0, 0, 1);
+  width: 300px;
+  height: 28px;
+  word-wrap: break-word;
+}
+
+.frame-1 {
+  padding: 9px 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(226, 225, 229, 1);
+  height: 150px;
+}
+
+.name-1 {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(210, 210, 210, 1);
+  width: 270px;
+  word-wrap: break-word;
+}
+
+.minheight {
+  width: 1px;
+  height: 84px;
+}
+
+.ob-forms-post {
+  padding: 9px 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgba(250, 144, 33, 1);
+  height: 80px;
+  border: 1px solid rgba(250, 144, 33, 1);
+
+}
+
+
+
+.name-2 {
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 200%;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+/* CSS */
+.button-post {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+
+  white-space: nowrap;
+  width: 100%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.errors {
+	margin: 10px auto;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 460px;
+  color: white;
+}
