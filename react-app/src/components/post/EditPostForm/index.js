@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useParams, Redirect } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { updateOnePost } from "../../../store/posts";
-
+import './EditPostForm.css'
 
 
 

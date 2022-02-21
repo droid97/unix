@@ -1,0 +1,35 @@
+.edit-container{
+
+    left      : 50%;
+    top       : 58%;
+    position  : absolute;
+    transform : translate(-50%, -50%);
+
+
+}
+
+
+.edit-caption {
+    width: 100%;
+    border: 1px solid black;
+    padding: .5%;
+    text-align: left;
+
+}
+
+.edit-form-button {
+
+
+
+text-decoration: none;
+background-color: black;
+color: white;
+text-align: center;
+
+display: inline-block;
+
+}
+
+.errors-edit-post {
+    color: black;
+}
