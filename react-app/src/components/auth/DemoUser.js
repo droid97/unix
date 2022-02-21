@@ -19,7 +19,7 @@ const DemoButton = () => {
   }
 
   return (
-   <button className='btn-login' onClick={handleDemo}>Demo</button>
+   <button class="submit-login" onClick={handleDemo}>Demo</button>
   )
 }
 
