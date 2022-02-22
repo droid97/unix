@@ -12,6 +12,7 @@ const EditPostForm = () => {
     const [errors, setErrors] = useState([]);
     const [caption, setCaption] = useState('');
     const oldCaption = useSelector(state => state?.posts[id]?.caption)
+    const posts = useSelector(state => state?.posts);
 
 
     const validate = () => {
@@ -38,7 +39,7 @@ const EditPostForm = () => {
 
     useEffect(() => {
         setCaption(oldCaption)
-    }, [])
+    }, [oldCaption])
 
 
 

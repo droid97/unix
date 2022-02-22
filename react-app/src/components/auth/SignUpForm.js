@@ -13,8 +13,31 @@ const SignUpForm = () => {
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
 
+  const validate = () => {
+
+    const errors = [];
+    // if (!imgURL || !validUrl.isUri(imgURL)) {
+    //      errors.push("Please provide an image URL for your photo.")
+    //  }
+     if (!username) {
+        errors.push("Please provide a username.")
+    }
+     if (!email) {
+      errors.push("Please provide a valid email.")
+    }
+     if (!password) {
+      errors.push("Please provide a password.")
+    }
+
+    return errors
+}
+
   const onSignUp = async (e) => {
     e.preventDefault();
+    const errors = validate();
+
+    if (errors.length > 0) return setErrors(errors);
+
     if (password === repeatPassword) {
       const data = await dispatch(signUp(username, email, password));
       if (data) {
@@ -62,6 +85,7 @@ const SignUpForm = () => {
           placeholder='Username'
           onChange={updateUsername}
           value={username}
+
         ></input>
       </div>
       <div>

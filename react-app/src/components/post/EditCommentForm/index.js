@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { useHistory, useParams, Redirect } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { updateOneComment } from "../../../store/comments";
-
+import './EditCommentForm.css'
 
 const EditCommentForm = () => {
 
     const history = useHistory();
 
     const commentId = useParams().id
-    
+
     const comments = Object.values(useSelector(state => state.comments))
 
     const comment = comments.find(comment => comment.id === +commentId)

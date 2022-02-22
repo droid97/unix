@@ -35,12 +35,10 @@ const PostListing = () => {
     return (
 <div className='imgsContainer'>
 <>
-        {feed?.map(post => (
-            <NavLink to={`posts/${post?.id}`} key={post?.id}>
-              <div className='imgContainer'>
-            <img key={post?.id} alt={post?.caption} src={post?.imgURL} height="400px" width="400px"></img>
+        {feed?.map((post, index) => (
+            <NavLink to={`posts/${post?.id}`} key={index}>
+            <img key={index} alt={post?.caption} src={post?.imgURL} height="400px" width="400px"></img>
 
-            </div>
           </NavLink>
 
 

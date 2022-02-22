@@ -9,7 +9,7 @@ import EditPostForm from './components/post/EditPostForm';
 import EditCommentForm from './components/post/EditCommentForm';
 import NewPostForm from './components/post/NewPostForm';
 import SplashPage from './components/post/SplashPage';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UsersList from './components/UsersList';
 import User from './components/User';
