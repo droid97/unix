@@ -16,27 +16,27 @@ const SignUpForm = () => {
   const validate = () => {
 
     const errors = [];
-    // if (!imgURL || !validUrl.isUri(imgURL)) {
-    //      errors.push("Please provide an image URL for your photo.")
-    //  }
-     if (!username) {
-        errors.push("Please provide a username.")
-    }
-     if (!email) {
-      errors.push("Please provide a valid email.")
-    }
-     if (!password) {
-      errors.push("Please provide a password.")
-    }
+      if (password !== repeatPassword) {
+           errors.push("Passwords have to match.")
+       }
+      if (!username) {
+         errors.push("Please provide a username.")
+     }
+      if (!email) {
+       errors.push("Please provide a valid email.")
+     }
+      if (!password) {
+       errors.push("Please provide a password.")
+     }
 
-    return errors
-}
+     return errors
+  }
 
   const onSignUp = async (e) => {
     e.preventDefault();
-    const errors = validate();
+     const errors = validate();
 
-    if (errors.length > 0) return setErrors(errors);
+     if (errors.length > 0) return setErrors(errors);
 
     if (password === repeatPassword) {
       const data = await dispatch(signUp(username, email, password));
@@ -63,7 +63,7 @@ const SignUpForm = () => {
   };
 
   if (user) {
-    return <Redirect to='/' />;
+    return <Redirect to='/feed' />;
   }
 
   return (
@@ -108,6 +108,8 @@ const SignUpForm = () => {
           placeholder='Password'
           onChange={updatePassword}
           value={password}
+          required={true}
+
         ></input>
       </div>
       <div>

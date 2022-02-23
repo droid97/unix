@@ -16,9 +16,9 @@ const UserOptions = () => {
       })
     return (
         <div className="drop-downmenu">
-            <NavLink to={`/users/${userId}`}>
+            <div >
                 <p className="textProfileDropDown"><CgProfile id='profileProfile'  />{user?.username}</p>
-            </NavLink>
+            </div>
 
             <div className="textProfileDropDown" id="logoutButtomDiv">
              <LogoutButton/>

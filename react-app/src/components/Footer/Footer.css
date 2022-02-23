@@ -1,0 +1,25 @@
+p {
+    font-family: "Lato", sans-serif;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+
+    border-top: 1px solid lightgray;
+    padding: 10px;
+    text-align: center;
+    background-color: white
+
+  }
+
+  .footer > p {
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .links {
+    color: rgba(250, 131, 5, 1)
+
+  }

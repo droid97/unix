@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Footer from '../../Footer';
 import './SplashPage.css'
 
 const SplashPage = () => {
@@ -36,6 +37,7 @@ const SplashPage = () => {
           <p className="txt-876">Sign up</p>
           </NavLink>
         </div>
+        <Footer/>
       </div>
     )
 
