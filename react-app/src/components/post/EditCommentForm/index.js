@@ -70,7 +70,7 @@ const EditCommentForm = () => {
 
     if (!user) {
         return (
-            <Redirect to='/unix'/>
+            <Redirect to='/'/>
         )
     }
 

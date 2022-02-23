@@ -43,7 +43,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Switch>
-      <Route path='/unix' exact={true}>
+      <Route path='/' exact={true}>
           <SplashPage />
         </Route>
         <Route path='/feed' exact={true}>

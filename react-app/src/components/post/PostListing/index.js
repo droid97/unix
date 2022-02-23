@@ -28,7 +28,7 @@ const PostListing = () => {
 
     if (!user) {
         return (
-            <Redirect to='/unix'/>
+            <Redirect to='/'/>
         )
     }
 

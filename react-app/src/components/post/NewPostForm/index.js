@@ -65,7 +65,7 @@ const NewPostForm = () => {
 
     if (!user) {
         return (
-            <Redirect to='/unix'/>
+            <Redirect to='/'/>
         )
     }
     return (
