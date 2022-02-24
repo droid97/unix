@@ -24,7 +24,7 @@ const SplashPage = () => {
             </div>
             <p className="txt-373">
               Join us in this social media made for us by us.
-              If you are into gaming or into having fun, just login and sher.
+              If you are into gaming or into having fun, just login and share.
             </p>
           </div>
           <div className="group-7">
