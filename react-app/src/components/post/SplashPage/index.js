@@ -22,8 +22,8 @@ const SplashPage = () => {
               <p className="txt-669">Join our community of gamers</p>
             </div>
             <p className="txt-373">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard.
+              Join us in this social media made for us by us.
+              If you are into gaming or into having fun, just login and sher.
             </p>
           </div>
           <div className="group-7">
