@@ -97,7 +97,7 @@ export default function (state = initialState, action) {
             return newState
 
         case UPDATE_POST:
-            state[action.payload.id] = action.payload;
+            state[action.payload.post.id] = action.payload.post;
             newState = { ...state };
             return newState
 

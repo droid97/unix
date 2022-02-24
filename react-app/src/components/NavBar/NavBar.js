@@ -7,7 +7,7 @@ import { ImPacman } from "react-icons/im";
 import { SiAboutdotme } from "react-icons/si";
 import { CgProfile } from "react-icons/cg";
 import { getAllPosts } from '../../store/posts';
-import logo from "./unity.PNG"
+import logo from "./unix.png"
 import './NavBar.css'
 
 const NavBar = () => {
