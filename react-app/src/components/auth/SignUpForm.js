@@ -19,6 +19,9 @@ const SignUpForm = () => {
       if (password !== repeatPassword) {
            errors.push("Passwords have to match.")
        }
+       if (!email.includes("@")) {
+        errors.push("Please provide an email.")
+    }
       if (!username) {
          errors.push("Please provide a username.")
      }
