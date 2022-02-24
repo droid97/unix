@@ -19,7 +19,8 @@ const SplashPage = () => {
         <div className="group-8">
           <div className="group-6 flex-col-vsb">
             <div className="group-5">
-              <p className="txt-669">Join our community of gamers</p>
+            <p className="txt-669">UNIX</p>
+             <p className="txt-669">Join our community of gamers</p>
             </div>
             <p className="txt-373">
               Join us in this social media made for us by us.
