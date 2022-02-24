@@ -1,6 +1,6 @@
 UNIX
 
-Unix is an online, social media for gamers to cheer gaming realted stuff. Individuals can create accounts and use the platform to socialice and have fun while doing it. You can post images , look at posts and comment on them.
+Unix is an online, social media for gamers to share gaming realted stuff. Individuals can create accounts and use the platform to socialice and have fun while doing it. You can post images , look at posts and comment on them.
 
 Link to live site: Unix (https://unix-aa-ag.herokuapp.com/).
 
