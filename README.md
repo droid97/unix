@@ -1,6 +1,6 @@
 UNIX
 
-Unix is an online, social media for gamers to share gaming realted stuff. Individuals can create accounts and use the platform to socialice and have fun while doing it. You can post images , look at posts and comment on them.
+Unix is an online, social media app for gamers to share gaming related stuff. Individuals can create accounts and use the platform to socialice and have fun while doing it. You can post images , look at posts and comment on them.
 
 Link to live site: Unix (https://unix-aa-ag.herokuapp.com/).
 
@@ -16,16 +16,17 @@ Link to live site: Unix (https://unix-aa-ag.herokuapp.com/).
 
 
 
-At A Glance
+
 UNITY is a full stack web application, that allows:
 
 logged users can:
-Post a photos awith a caption
-Edit a those posts by the user
-Delete a their posts post by their user
+Post photos awith a caption
+Edit those posts
+Delete their posts
 Post a comment
 Edit those comments posted by the user
-Delete a their posts
+Delete their comments
+
 Application Architecture
 Unity is built with a React/Redux frontend and an Python/Flask backend. PostgreSQL/SQLalchemy is also used as a database. Docker and Heroku are used for the live server.
 
@@ -35,8 +36,6 @@ Javascript React JS Redux Flask SQLalchemy PostgreSQl Docker Heroku
 Key Features
 User Authorization
 When users log in, the password they provide is rehashed and checked against the original password. Sign up form:
-
-
 
 
 Post/Edit/Delete a Post
